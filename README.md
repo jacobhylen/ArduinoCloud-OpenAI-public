@@ -21,7 +21,7 @@ npm install openai
 ```
 ## API keys
 
-In your OpenAI account, create a new API key, and add some credits to your account. (Calling the API is not expensive)
+In your OpenAI account, create a new API key, and add some credits to your account. (Calling the API is not expensive). Add the newly created API key in the `.env` file.
 
 You will need to set up a manual device in the Arduino Cloud, and get the secret key and the device ID, and place them in the `.env` file 
 
