@@ -19,6 +19,11 @@ npm install arduino-iot-js
 ```
 npm install openai
 ```
+## API keys
+
+In your OpenAI account, create a new API key, and add some credits to your account. (Calling the API is not expensive)
+
+You will need to set up a manual device in the Arduino Cloud, and get the secret key and the device ID, and place them in the `.env` file 
 
 You are also required to configure a Thing in the Arduino cloud, that has a String variable named `prompt`, and booleans named `livingroom`, `kitchen`, `bathroom`, and `desklight`.
 
@@ -26,13 +31,14 @@ Configure the device in the Cloud as a manually configured device, and replace t
 
 Acquire an OpenAI API key and replace the one in the code with it as well.
 
+
 ## Start 
 
 ```
 node main.mjs
 ```
 ### Tweak behaviour
-To tweak the behaviour of the chatbot, you can change the contents system message on line 20.
+To tweak the behaviour of the chatbot, you can change the contents of the system message.
 
 ```
     { role: "system", content: 'Put your custom instructions here' },
